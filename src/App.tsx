@@ -22,7 +22,7 @@ type Todo = {
 
 export const App = () => {
   const [todos, setTodos] = useState<Todo[]>(todosFromServer);
-  const [users, setUsers] = useState<User[]>(usersFromServer);
+  const [users] = useState<User[]>(usersFromServer);
   const [title, setTitle] = useState('');
   const [userId, setUserId] = useState(0);
   const [titleError, setTitleError] = useState(false);

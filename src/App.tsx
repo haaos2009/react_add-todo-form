@@ -4,8 +4,7 @@ import usersFromServer from './api/users';
 import todosFromServer from './api/todos';
 import { FormEvent, useState } from 'react';
 import { TodoList } from './components/TodoList';
-import { Todo } from './components/Type/TypeTodo';
-import { User } from './components/Type/TypeUser';
+import { Todo, User } from './types';
 
 export const App = () => {
   const [todos, setTodos] = useState<Todo[]>(todosFromServer);
